@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+$body-background-color: #fff;
+$text-color: #444;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(50deg, #f3c680, hsla(179,54%,76%,1));
+    color: $text-color;
+    font-size: 16px;
+    min-height: 100vh;
+}	
+
+main {
+    max-width: 60vw;
+    margin: 0 auto;
+
+}
+
+section {
+    max-width: 60vw;
+    margin: 50px auto;
+}
