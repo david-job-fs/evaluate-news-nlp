@@ -6,39 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
-            <h1>Evaluate a News Article with NLP</h1>
-        </header>
+        <div id="gradient">
+            <header>
+                <h1>Evaluate a News Article with NLP</h1>
+            </header>
 
-        <main>
-            <form onsubmit="return Client.handleSubmit(event)">
-                <label for="article-url">
-                  Type in an news article URL:
-                </label>
-                <input required id="article-url" type="text" placeholder="https://..." />
-                <input class="submit-button" type="submit" value="Submit" />
-            </form>
-            <section class="url-results">
-                <h2>Result:</h2>
-                <ul>
-                  <li>
-                    <h3>Text Polarity:</h3>
-                    <p id="polarity"></p>
-                    <h3>Confidence:</h3>
-                    <p id="polarity_confidence"></p>
-                  </li>
-                  <li>
-                    <h3>Text Subjectivity:</h3>
-                    <p id="subjectivity"></p>
-                    <h3>Confidence:</h3>
-                    <p id="subjectivity_confidence"></p>
-                  </li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <span>© 2020</span>
-        </footer>
+            <main>
+                <form onsubmit="return Client.handleSubmit(event)">
+                    <label for="article-url">
+                      Type in an news article URL:
+                    </label>
+                    <input required id="article-url" type="text" placeholder="https://..." />
+                    <input class="submit-button" type="submit" value="Submit" />
+                </form>
+                <section class="url-results">
+                    <h2>Result:</h2>
+                    <ul>
+                      <li>
+                        <h3>Text Polarity:</h3>
+                        <p id="polarity"></p>
+                        <h3>Confidence:</h3>
+                        <p id="polarity_confidence"></p>
+                      </li>
+                      <li>
+                        <h3>Text Subjectivity:</h3>
+                        <p id="subjectivity"></p>
+                        <h3>Confidence:</h3>
+                        <p id="subjectivity_confidence"></p>
+                      </li>
+                    </ul>
+                </section>
+            </main>
+            <footer>
+                <span>© 2020</span>
+            </footer>
+        </div>
         <script>
         // Check that service workers are supported
         if ('serviceWorker' in navigator) {
